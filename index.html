@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Animation - Rishab Lath</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading" class="fixed w-full h-screen bg-black translate-y-0 flex justify-center items-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl z-10 text-white transition-all duration-1000">Loading -&nbsp;<span id="load">0</span>&nbsp;%</div>
+    <div class="w-full bg-zinc-900">
+        <div class="w-full relative h-screen bg-black text-white flex justify-center items-center flex-col gap-32">
+            <div class="flex justify-center items-center flex-col gap-12">
+                <h1 id="head1" class="text-2xl sm:text-5xl md:text-6xl">Enjoy </h1>
+                <h2 id="head2" class="text-2xl sm:text-5xl md:text-6xl">The Image Animation </h2>
+                <h2 id="head3" class="text-2xl sm:text-5xl md:text-6xl">Xperience </h2>
+            </div>
+            <div class="flex justify-center items-center flex-col arrow">    
+                <h3 class="text-4xl">|</h3>
+                <h3 class="-m-4 text-4xl">v</h3>
+            </div>
+        </div>
+        <div class="parent relative top-0 left-0 w-full h-[100vh]">
+           <div class="absolute w-full h-screen bg-black opacity-40"></div>
+            <h3 class="word2 absolute z-10 text-2xl sm:text-5xl text-white top-10 left-6 sm:left-16">Pure</h3>
+            <h3 class="word3 absolute z-10 text-2xl sm:text-5xl text-white top-10 right-6 sm:right-16">Juicy</h3>
+            <h3 class="word4 absolute z-10 text-2xl sm:text-5xl text-white bottom-10 left-6 sm:left-16">Nutricious</h3>
+            <h3 class="word5 absolute z-10 text-2xl sm:text-5xl text-white bottom-10 right-6 sm:right-16">Fresh</h3>
+            <h3 class="word6 absolute z-10 text-7xl text-green-700 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">Lemons</h3>
+        
+            <div class="w-full top-0 left-0 h-screen">
+                <canvas class="w-full h-screen" id="frame"></canvas>
+            </div>
+        </div>
+        <div class="w-full h-screen bg-black text-white grid place-items-center last">
+            <h5 class="head4 text-2xl md:text-4xl">Created By Rishab Lath</h5>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</html>
